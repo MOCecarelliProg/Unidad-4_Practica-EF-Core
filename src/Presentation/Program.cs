@@ -7,6 +7,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Agregar el ApplicationDbContext al contenedor de servicios
+
+//Configurar servicios y repositorios como Scoped
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
