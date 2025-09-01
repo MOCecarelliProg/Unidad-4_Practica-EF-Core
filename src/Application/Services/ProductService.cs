@@ -1,6 +1,8 @@
-﻿namespace Application.Services;
+﻿using Application.Interfaces;
 
-public class ProductService
+namespace Application.Services;
+
+public class ProductService : IProductService
 {
     //Completar...
 }

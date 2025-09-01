@@ -7,9 +7,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Agregar el ApplicationDbContext al contenedor de servicios
+//Agregar y configurar la clase ApplicationDbContext en el contenedor de servicios
 
-//Configurar servicios y repositorios como Scoped
+//Agregar al contenedor de servicios IProductServico y IProductRepository, ambos como Scoped
 
 var app = builder.Build();
 

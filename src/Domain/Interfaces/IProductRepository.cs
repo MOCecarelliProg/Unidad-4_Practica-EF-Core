@@ -12,8 +12,8 @@ namespace Domain.Interfaces
         Product Create(Product newProduct);
 
         //List<Product> GetAll();
-        //Product GetById(int id);
+        //Product? GetById(int id);
         //void Update(Product updatedProduct);
-        //void Delete(int id);
+        //void Delete(Product productToRemove);
     }
 }
