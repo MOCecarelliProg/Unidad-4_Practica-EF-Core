@@ -16,16 +16,14 @@ namespace Application.Models
         public DateTime CreatedDate { get; set; }
         public DateTime? LastUpdate { get; set; }
 
-        public static ProductDTO Create(Product product)
+        /*public static ProductDTO Create(Product product)
         {
             //Completar...
-            throw new NotImplementedException();
-        }
+        }*/
 
-        public static List<ProductDTO> CreateList(List<Product> productList)
+        /*public static List<ProductDTO> CreateList(List<Product> productList)
         {
             //Completar...
-            throw new NotImplementedException();
-        }
+        }*/
     }
 }
