@@ -7,13 +7,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepositoryBase<Product>
     {
-        Product Create(Product newProduct);
-
-        //List<Product> GetAll();
-        //Product? GetById(int id);
-        //void Update(Product updatedProduct);
-        //void Delete(Product productToRemove);
+        Task<List<Product>> GetByCategoryAsync(int? categoryId, bool removed);
+        Task<List<Product>> GetByNameAsync(string name, bool removed);
+        Task<List<Product>> GetOnlyNotRemovedAsync();
     }
 }

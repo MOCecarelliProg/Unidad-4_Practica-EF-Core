@@ -10,11 +10,12 @@ namespace Application.Interfaces
 {
     public interface IProductService
     {
-        ProductDTO Create(CreationProductDTO creationProductDto);
-
-        //List<ProductDTO> GetAll();
-        //ProductDTO GetById(int id);
-        //void Update(int id, CreationProductDTO creationProductDto);
-        //void Delete(int id);
+        Task<ProductDTO> Create(CreationProductDTO creationProductDto);
+        Task<List<ProductDTO>> GetAll(int? categoryId, string? productName);
+        Task<ProductDTO> GetById(int id);
+        Task Update(int id, CreationProductDTO creationProductDto);
+        Task Delete(int id);
+        //Task<List<ProductDTO>> GetByCategory(int categoryId);
+        //Task<List<ProductDTO>> GetByName(string productName);
     }
 }
