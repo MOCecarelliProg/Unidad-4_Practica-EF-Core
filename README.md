@@ -16,7 +16,7 @@ Luego de haber conseguido aplicar la migración con éxito puedes continuar prog
 * Crear IProductRepository y ProductRepository;
 * Crear IProductService y ProductService;
 * Crear ProductController.
-(Asegúrate de aplicar DI para:
+* (Asegúrate de aplicar DI para:
 * Inyectar el ApplicationDbContext en el ProductRepository;
 * Inyectar el IProductRepository en el ProductService;
 * Inyectar el IProductService en el ProductController;
